@@ -1,5 +1,5 @@
 # select-box
-select box for Yii2 
+select box for Yii2 由一个选框添加到另外一个选框
 
 
 > 效果图片
