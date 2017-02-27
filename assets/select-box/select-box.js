@@ -16,6 +16,12 @@
             var yesButton = $('#'+id+'-btn-yes');
             var noButton = $('#'+id+'-btn-no');
 
+            targetSelect.on('update',function () {
+                targetSelect
+                    .find('option')
+                    .attr('selected',true);
+            });
+
             sourceSearchInput.keyup(function () {
                 var filter = sourceSearchInput.val().trim();
                 sourceSelect.find('option').each(function () {
@@ -40,15 +46,14 @@
                         _option.css({display:'block'});
                     }
                 });
+                targetSelect.trigger('update');
             });
 
             yesButton.click(function () {
                 sourceSelect
                     .find('option:selected')
                     .appendTo(targetSelect);
-                targetSelect
-                    .find('option')
-                    .attr('selected',true);
+                targetSelect.trigger('update');
             });
 
             noButton.click(function () {
@@ -57,10 +62,7 @@
                     .appendTo(sourceSelect);
             });
 
-
-            targetSelect
-                .find('option')
-                .attr('selected',true);
+            targetSelect.trigger('update');
 
         });
     };
