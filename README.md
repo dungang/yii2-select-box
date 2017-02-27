@@ -9,7 +9,7 @@ select box for Yii2 由一个选框添加到另外一个选框
 ## 安装
 
 ```
-composer require dungang/mjax
+composer require dungang/select-box
 ```
 
 ## 使用
