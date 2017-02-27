@@ -28,7 +28,7 @@ dungang\selectbox\SelectBox::widget([
 > 方法2
 
 ```
-$form->field($model,'parents')->widget('huluwa\selectbox\SelectBox',[
+$form->field($model,'parents')->widget('dungang\selectbox\SelectBox',[
     'sourceItems'=>['val1'=>'text1','val2'=>'text2'],
     'targetItems'=>['val3'=>'text3','val4'=>'text4'],
 ])
