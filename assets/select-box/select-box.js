@@ -5,8 +5,7 @@
 
     'use strict';
 
-    $.fn.selectBox = function (options) {
-        var opts = $.extend({},$.fn.selectBox.default,options);
+    $.fn.selectBox = function () {
         return this.each(function () {
             var _this = $(this);
             var id = _this.attr('id');
@@ -47,6 +46,9 @@
                 sourceSelect
                     .find('option:selected')
                     .appendTo(targetSelect);
+                targetSelect
+                    .find('option')
+                    .attr('selected',true);
             });
 
             noButton.click(function () {
@@ -55,15 +57,12 @@
                     .appendTo(sourceSelect);
             });
 
-            $('#'+opts.formId).submit(function () {
-                targetSelect.find('option').attr('selected',true);
-            });
+
+            targetSelect
+                .find('option')
+                .attr('selected',true);
 
         });
-    };
-
-    $.fn.selectBox.default = {
-        'formId':'form'
     };
 
 }(jQuery);
