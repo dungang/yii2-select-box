@@ -1,4 +1,4 @@
-# select-box
+# yii2-select-box
 select box for Yii2 由一个选框添加到另外一个选框
 
 
@@ -9,7 +9,7 @@ select box for Yii2 由一个选框添加到另外一个选框
 ## 安装
 
 ```
-composer require dungang/select-box
+composer require dungang/yii2-select-box
 ```
 
 ## 使用
