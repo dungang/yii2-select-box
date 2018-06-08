@@ -2,7 +2,6 @@
   "name": "dungang/yii2-select-box",
   "description": "Bootstrap Select Box for Yii2 ",
   "license": "MIT",
-  "minimum-stability": "dev",
   "authors": [
     {
       "name": "dun gang",
